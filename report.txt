@@ -1,0 +1,279 @@
+Dataset Shape: (9994, 19)
+
+First 5 rows:
+         order_id order_date  ...    sales profit_margin
+0  US-2020-103800   1/3/2019  ...   16.448        0.3375
+1  US-2020-112326   1/4/2019  ...    3.540       -1.5500
+2  US-2020-112326   1/4/2019  ...   11.784        0.3625
+3  US-2020-112326   1/4/2019  ...  272.736       -0.2375
+4  US-2020-141817   1/5/2019  ...   19.536        0.2500
+
+[5 rows x 19 columns]
+
+Column Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 9994 entries, 0 to 9993
+Data columns (total 19 columns):
+ #   Column         Non-Null Count  Dtype  
+---  ------         --------------  -----  
+ 0   order_id       9994 non-null   str    
+ 1   order_date     9994 non-null   str    
+ 2   ship_date      9994 non-null   str    
+ 3   customer       9994 non-null   str    
+ 4   manufactory    9994 non-null   str    
+ 5   product_name   9994 non-null   str    
+ 6   segment        9994 non-null   str    
+ 7   category       9994 non-null   str    
+ 8   subcategory    9994 non-null   str    
+ 9   region         9994 non-null   str    
+ 10  zip            9994 non-null   int64  
+ 11  city           9994 non-null   str    
+ 12  state          9994 non-null   str    
+ 13  country        9994 non-null   str    
+ 14  discount       9994 non-null   float64
+ 15  profit         9994 non-null   float64
+ 16  quantity       9994 non-null   int64  
+ 17  sales          9994 non-null   float64
+ 18  profit_margin  9994 non-null   float64
+dtypes: float64(4), int64(2), str(13)
+memory usage: 1.4 MB
+None
+
+Missing Values:
+order_id         0
+order_date       0
+ship_date        0
+customer         0
+manufactory      0
+product_name     0
+segment          0
+category         0
+subcategory      0
+region           0
+zip              0
+city             0
+state            0
+country          0
+discount         0
+profit           0
+quantity         0
+sales            0
+profit_margin    0
+dtype: int64
+
+Basic Statistics:
+                zip     discount  ...         sales  profit_margin
+count   9994.000000  9994.000000  ...   9994.000000    9994.000000
+mean   55190.371723     0.156203  ...    229.858001       0.120314
+std    32063.705315     0.206452  ...    623.245101       0.466754
+min     1040.000000     0.000000  ...      0.444000      -2.750000
+25%    23223.000000     0.000000  ...     17.280000       0.075000
+50%    56430.500000     0.200000  ...     54.490000       0.270000
+75%    90008.000000     0.200000  ...    209.940000       0.362500
+max    99301.000000     0.800000  ...  22638.480000       0.500000
+
+[8 rows x 6 columns]
+
+Duplicate rows: 1
+Total records in DB: 9994
+
+Data Types:
+order_id                    str
+order_date       datetime64[us]
+ship_date        datetime64[us]
+customer                    str
+manufactory                 str
+product_name                str
+segment                     str
+category                    str
+subcategory                 str
+region                      str
+zip                       int64
+city                        str
+state                       str
+country                     str
+discount                float64
+profit                  float64
+quantity                  int64
+sales                   float64
+profit_margin           float64
+Year                      int32
+Month                     int32
+Quarter                   int32
+Day                       int32
+DayOfWeek                 int32
+MonthName                   str
+YearMonth             period[M]
+Profit_Margin           float64
+High_Value                 bool
+dtype: object
+
+Missing values after cleaning:
+order_id         0
+order_date       0
+ship_date        0
+customer         0
+manufactory      0
+product_name     0
+segment          0
+category         0
+subcategory      0
+region           0
+zip              0
+city             0
+state            0
+country          0
+discount         0
+profit           0
+quantity         0
+sales            0
+profit_margin    0
+Year             0
+Month            0
+Quarter          0
+Day              0
+DayOfWeek        0
+MonthName        0
+YearMonth        0
+Profit_Margin    0
+High_Value       0
+dtype: int64
+
+Dataset Shape: (9994, 28)
+
+==================================================
+BASIC STATISTICS
+==================================================
+
+Total Sales: $2,297,200.86
+Total Profit: $286,397.02
+Total Quantity Sold: 37,873
+Average Profit Margin: 0.12%
+Number of Orders: 5,009
+Number of Customers: 793
+Number of Products: 1,849
+
+==================================================
+REGIONAL PERFORMANCE
+==================================================
+         Total Sales  Total Profit  ...  Total Quantity  Order Count
+region                              ...                             
+West       725457.82     108418.45  ...           12266         3203
+East       678781.24      91522.78  ...           10618         2848
+Central    501239.89      39706.36  ...            8780         2323
+South      391721.90      46749.43  ...            6209         1620
+
+[4 rows x 5 columns]
+
+==================================================
+CATEGORY PERFORMANCE
+==================================================
+                 Total Sales  ...  Order Count
+category                      ...             
+Technology         836154.03  ...         1847
+Furniture          741999.80  ...         2121
+Office Supplies    719047.03  ...         6026
+
+[3 rows x 5 columns]
+
+==================================================
+TOP 10 SUB-CATEGORIES BY SALES
+==================================================
+                 sales    profit  Profit_Margin
+subcategory                                    
+Phones       330007.05  44515.73           0.12
+Chairs       328449.10  26590.17           0.04
+Storage      223843.61  21278.83           0.09
+Tables       206965.53 -17725.48          -0.15
+Binders      203412.73  30221.76          -0.20
+Machines     189238.63   3384.76          -0.07
+Accessories  167380.32  41936.64           0.22
+Copiers      149528.03  55617.82           0.32
+Bookcases    114880.00  -3472.56          -0.13
+Appliances   107532.16  18138.01          -0.16
+
+==================================================
+TIME SERIES ANALYSIS
+==================================================
+
+Daily Sales Range: $2.02 to $28,106.72
+Average Daily Sales: $1,858.58
+
+Monthly Sales Range: $4,519.89 to $118,447.82
+Average Monthly Sales: $47,858.35
+
+Yearly Sales:
+Year
+2019    484247.4981
+2020    470532.5090
+2021    609205.5980
+2022    733215.2552
+Name: sales, dtype: float64
+
+==================================================
+TOP 5 CUSTOMERS BY SALES
+==================================================
+               Total Sales  Total Profit  Order Count
+customer                                             
+Sean Miller       25043.05      -1980.74           15
+Tamara Chand      19052.22       8981.32           12
+Raymond Buch      15117.34       6976.10           18
+Tom Ashbrook      14595.62       4703.79           10
+Adrian Barton     14473.57       5444.81           20
+
+==================================================
+TOP 5 PRODUCTS BY SALES
+==================================================
+                                                    Total Sales  ...  Total Quantity
+product_name                                                     ...                
+Canon imageCLASS 2200 Advanced Copier                  61599.82  ...              20
+Fellowes PB500 Electric Punch Plastic Comb Bind...     27453.38  ...              31
+Cisco TelePresence System EX90 Videoconferencin...     22638.48  ...               6
+HON 5400 Series Task Chairs for Big and Tall           21870.58  ...              39
+GBC DocuBind TL300 Electric Binding System             19823.48  ...              37
+
+[5 rows x 3 columns]
+
+==================================================
+MANUFACTORY PERFORMANCE
+==================================================
+                 Total Sales  Total Profit  Total Quantity
+manufactory                                               
+Other              309451.49      40118.85            7147
+Hon                150146.03       9632.10             789
+Global             130265.46       9471.44            1062
+Canon              107504.81      41905.51             124
+GBC                 95630.44       7354.47            1309
+Fellowes            85283.98      15299.67             912
+Logitech            67371.09      15607.83             788
+Hewlett-Packard     59433.17      18489.46             125
+Xerox               57544.47      23573.87            3221
+Tennsco             52663.10       2305.16             301
+
+==================================================
+DATA QUALITY CHECKS
+==================================================
+
+Orders with negative profit: 1,871
+Total loss from negative profit orders: $-156,131.29
+
+Average margin for zero discount orders: 0.34%
+
+==================================================
+KEY FINDINGS SUMMARY
+==================================================
+
+📍 Best Performing Region: West
+📍 Worst Performing Region: South
+
+🏆 Most Profitable Category: Technology
+⚠️ Least Profitable Category: Furniture
+
+📊 Highest Margin Segment: Home Office (0.14%)
+📊 Lowest Margin Segment: Consumer (0.11%)
+
+📅 Best Month for Sales: November
+📅 Worst Month for Sales: February
+
+✅ Cleaned data exported to 'superstore_cleaned.csv'
+✅ Analysis complete! Ready for Power BI dashboard.
