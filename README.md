@@ -249,23 +249,3 @@ Output is saved at 300 DPI for print-quality resolution.
 The `notebooks/exploration.ipynb` Jupyter notebook provides an interactive environment for ad-hoc data exploration beyond the automated pipeline.
 
 ---
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
-
----
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 📬 Contact
-
-For questions, suggestions, or feedback, please open an issue on the repository.
