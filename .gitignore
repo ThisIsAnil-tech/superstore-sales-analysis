@@ -1,0 +1,112 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+notebooks/.ipynb_checkpoints/
+
+# Data files (raw data, databases, processed data)
+data/raw/
+data/processed/
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# Outputs
+outputs/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.html
+
+# Reports
+*.txt
+*.log
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# OS specific
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Project specific
+superstore_cleaned.csv
+superstore.db
+analysis_report.txt
+superstore_analysis.png
